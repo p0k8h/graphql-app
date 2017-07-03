@@ -11,8 +11,6 @@ const EmployerUpdateMutation = require('./../mutations/updateEmployer');
 const SeekerUpdateMutation = require('./../mutations/updateSeeker');
 const JobUpdateMutation = require('./../mutations/updateJob');
 
-const UserCreateMutation = require('./../../test/new');
-
 const MutationType = new GraphQLObjectType({
     name: 'Mutation',
     fields: () => ({
@@ -25,8 +23,7 @@ const MutationType = new GraphQLObjectType({
         updateSeeker: SeekerUpdateMutation,
         updateJob: JobUpdateMutation,
         deleteJob: DeleteJob,
-        bookmark: BookmarkMutation,
-        usercreate: UserCreateMutation,
+        bookmark: BookmarkMutation
     }),
 });
 
