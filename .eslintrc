@@ -1,0 +1,16 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "indent":"off",
+        "no-underscore-dangle": "off",
+        "no-param-reassign":"off",
+        "no-console":"off",
+        "no-bitwise": "off"
+    }
+}
